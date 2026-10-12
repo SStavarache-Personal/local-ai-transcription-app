@@ -7,8 +7,11 @@ if (-not $SkipRuntime) {
     python scripts\prepare_runtime.py
     if ($LASTEXITCODE -ne 0) { throw 'Runtime preparation failed' }
 }
-dotnet publish src\LocalTranscriber\LocalTranscriber.csproj -c Release -r win-x64 --self-contained true -p:RestoreLockedMode=true -o $releaseRoot
+dotnet publish src\LocalTranscriber\LocalTranscriber.csproj -c Release -r win-x64 --self-contained true -p:RestoreLockedMode=true -p:DebugType=None -p:DebugSymbols=false -o $releaseRoot
 if ($LASTEXITCODE -ne 0) { throw 'Publish failed' }
+# Remove debug symbols left by an earlier build; they can contain developer paths.
+$debugSymbols = Join-Path $releaseRoot 'LocalTranscriber.pdb'
+if (Test-Path -LiteralPath $debugSymbols) { Remove-Item -LiteralPath $debugSymbols -Force }
 $nugetCache = if ($env:NUGET_PACKAGES) { $env:NUGET_PACKAGES } else { Join-Path $env:USERPROFILE '.nuget\packages' }
 Copy-Item -LiteralPath (Join-Path $nugetCache 'sqlite\3.53.4\LICENSE.txt') -Destination (Join-Path $PSScriptRoot 'assets\licences\SQLite-public-domain.txt') -Force
 if (-not (Test-Path -LiteralPath '.tools\runtime')) { throw 'Prepare bundled runtimes before packaging' }

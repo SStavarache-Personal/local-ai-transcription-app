@@ -5,6 +5,7 @@
 dist/
 test-output/
 *.user
+*.pdb
 *.partial
 __pycache__/
 # Local reports and captures can contain user paths and recorded content.

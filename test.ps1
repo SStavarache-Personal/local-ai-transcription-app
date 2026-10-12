@@ -5,6 +5,7 @@ if ($ReleaseName -notmatch '^[A-Za-z0-9-]+$') { throw 'ReleaseName must be a fol
 $releaseRoot = Join-Path $PSScriptRoot ('dist\' + $ReleaseName)
 $releaseExe = Join-Path $releaseRoot 'LocalTranscriber.exe'
 if (-not (Test-Path -LiteralPath $releaseExe)) { throw 'Run build.ps1 first' }
+if (Test-Path -LiteralPath (Join-Path $releaseRoot 'LocalTranscriber.pdb')) { throw 'Portable releases must exclude debug symbols that can contain developer paths' }
 $env:LOCALTRANSCRIBER_DATA = Join-Path $PSScriptRoot 'test-output\data'
 $env:LOCALTRANSCRIBER_REPORT = Join-Path $PSScriptRoot 'test-output\test-results.json'
 New-Item -ItemType Directory -Path 'test-output' -Force | Out-Null
