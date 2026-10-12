@@ -33,6 +33,10 @@ if (Test-Path -LiteralPath $packageDocs) {
 }
 New-Item -ItemType Directory -Path $packageDocs -Force | Out-Null
 Get-ChildItem -LiteralPath 'docs' -File -Filter '*.md' | Copy-Item -Destination $packageDocs -Force
+# Include only the two privacy-reviewed README images.
+$packageImages = Join-Path $packageDocs 'images'
+New-Item -ItemType Directory -Path $packageImages -Force | Out-Null
+Copy-Item -LiteralPath 'docs/images/library.jpg','docs/images/speech-workbench.jpg' -Destination $packageImages -Force
 # Bundle the MSVC CRT that native ONNX/ggml workers need; no end-user installer.
 $crtFiles = @('vcruntime140.dll','vcruntime140_1.dll','msvcp140.dll','concrt140.dll')
 foreach ($crtFile in $crtFiles) {

@@ -1,5 +1,7 @@
 # Local Transcriber user guide
 
+See the [Library and Speech-to-text screenshots](../README.md#screenshots) for an overview of the app and floating widget.
+
 ## Start
 
 Extract the whole portable ZIP. Open `LocalTranscriber.exe`. Windows x64 and AVX2 are required; 16 GB RAM is recommended, 32 GB gives more headroom. No model weights load at startup.

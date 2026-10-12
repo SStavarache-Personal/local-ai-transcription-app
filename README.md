@@ -16,6 +16,18 @@ Version 1.2 adds Qwen3.5 0.8B/2B/4B and Gemma 4 E2B/E4B downloads, saved speech-
 
 See [User guide](docs/USER_GUIDE.md), [architecture](docs/ARCHITECTURE.md), [decisions](docs/DECISIONS.md), [test results](docs/TEST_RESULTS.md), and [third-party notices](THIRD_PARTY_NOTICES.md).
 
+## Screenshots
+
+These captures use an isolated demo library and synthetic speech. They contain no personal recordings, names, account details or faces.
+
+**Library** — workspace navigation and linked recordings.
+
+![Library landing page with a demo workspace and a synthetic Getting started recording](docs/images/library.jpg)
+
+**Speech-to-text** — raw and processed results side by side, with the floating dictation widget open. The demo uses Parakeet and Qwen3.5 with the built-in Light cleanup prompt.
+
+![Speech-to-text workbench comparing synthetic speech and cleaned text, with the floating dictation widget](docs/images/speech-workbench.jpg)
+
 ## Build
 
 Development requires Windows x64, .NET SDK 10.0.101 or a compatible newer feature band, Python 3.13, and Git. Development-only runtime preparation downloads pinned archives and wheel packages; end users do not perform it.
