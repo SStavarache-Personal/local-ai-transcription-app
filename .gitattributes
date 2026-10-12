@@ -1,0 +1,8 @@
+* text=auto
+*.py text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.xaml text eol=lf
+# Preserve upstream licence text and the specification's Markdown line breaks.
+assets/licences/* -whitespace
+docs/SPECIFICATION.md whitespace=-blank-at-eol

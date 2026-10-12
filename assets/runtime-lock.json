@@ -1,0 +1,39 @@
+[
+  {
+    "id": "whisper",
+    "sha256": "6ba69e3482d7826214f90a6a9c84ca07782aec1e1d0c6a7c30c994fd5d816ccb",
+    "url": "https://github.com/ggml-org/whisper.cpp/releases/download/b5454/whisper-bin-x64.zip",
+    "license": "MIT",
+    "version": "b5454 / v1.9.5"
+  },
+  {
+    "id": "llama",
+    "sha256": "9895735aeef579aa46c356047f1e095ee6fcfe5558bd6b37ae83a7b4397d898e",
+    "url": "https://github.com/ggml-org/llama.cpp/releases/download/b11539/llama-b11539-bin-win-cpu-x64.zip",
+    "license": "MIT",
+    "version": "b11539"
+  },
+  {
+    "id": "python",
+    "sha256": "91d828c2da3a029b41699e918674a0cb379c02cf20dab9c501306885f837402a",
+    "url": "https://www.python.org/ftp/python/3.13.9/python-3.13.9-embed-amd64.zip",
+    "license": "PSF-2.0",
+    "version": "3.13.9"
+  },
+  {
+    "id": "ffmpeg",
+    "url": "https://www.gyan.dev/ffmpeg/builds/ffmpeg-release-essentials.zip",
+    "license": "GPL-3.0-or-later",
+    "version": "9.0.2 essentials (measured archive)",
+    "sha256": "60f467265b1e312373dbcd92200c2618a74850f98d3d078e94296bb3fa2047ba"
+  },
+  {
+    "id": "vad",
+    "kind": "file",
+    "filename": "model.onnx",
+    "url": "https://huggingface.co/onnx-community/silero-vad/resolve/e71cae966052b992a7eca6b17738916ce0eca4ec/onnx/model.onnx",
+    "sha256": "a4a068cd6cf1ea8355b84327595838ca748ec29a25bc91fc82e6c299ccdc5808",
+    "version": "e71cae966052b992a7eca6b17738916ce0eca4ec",
+    "license": "MIT"
+  }
+]

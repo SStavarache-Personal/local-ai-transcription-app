@@ -1,0 +1,4 @@
+SQLitePCLRaw 3.0.5
+Copyright 2014-2026 SourceGear, LLC. Author: Eric Sink.
+Apache License 2.0. Source: https://github.com/ericsink/SQLitePCL.raw
+Native SQLite 3.53.4 is public domain; its package licence accompanies this notice.

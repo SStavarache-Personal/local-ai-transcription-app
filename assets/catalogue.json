@@ -1,0 +1,738 @@
+[
+  {
+    "id": "parakeet-v3-int8",
+    "name": "Parakeet TDT V3 · INT8",
+    "role": "asr",
+    "runtime": "onnx-asr",
+    "revision": "8f23f0c03c8761650bdb5b40aaf3e40d2c15f1ce",
+    "license": "CC-BY-4.0",
+    "source": "https://huggingface.co/istupakov/parakeet-tdt-0.6b-v3-onnx",
+    "description": "European languages including English and French. Automatic language selection; CPU only. NVIDIA model, community ONNX conversion.",
+    "languages": [
+      "bg",
+      "hr",
+      "cs",
+      "da",
+      "nl",
+      "en",
+      "et",
+      "fi",
+      "fr",
+      "de",
+      "el",
+      "hu",
+      "it",
+      "lv",
+      "lt",
+      "mt",
+      "pl",
+      "pt",
+      "ro",
+      "sk",
+      "sl",
+      "es",
+      "sv",
+      "ru",
+      "uk"
+    ],
+    "forcedLanguage": false,
+    "sampleRate": 16000,
+    "estimatedMemoryMb": 3500,
+    "available": true,
+    "artifacts": [
+      {
+        "name": "config.json",
+        "url": "https://huggingface.co/istupakov/parakeet-tdt-0.6b-v3-onnx/resolve/8f23f0c03c8761650bdb5b40aaf3e40d2c15f1ce/config.json",
+        "size": 97,
+        "sha256": "666903c76b9798caf2c210afd4f6cd60b08a8dbf9800ec8d7a3bc0d2148ac466"
+      },
+      {
+        "name": "vocab.txt",
+        "url": "https://huggingface.co/istupakov/parakeet-tdt-0.6b-v3-onnx/resolve/8f23f0c03c8761650bdb5b40aaf3e40d2c15f1ce/vocab.txt",
+        "size": 93939,
+        "sha256": "d58544679ea4bc6ac563d1f545eb7d474bd6cfa467f0a6e2c1dc1c7d37e3c35d"
+      },
+      {
+        "name": "encoder-model.int8.onnx",
+        "url": "https://huggingface.co/istupakov/parakeet-tdt-0.6b-v3-onnx/resolve/8f23f0c03c8761650bdb5b40aaf3e40d2c15f1ce/encoder-model.int8.onnx",
+        "size": 652183999,
+        "sha256": "6139d2fa7e1b086097b277c7149725edbab89cc7c7ae64b23c741be4055aff09"
+      },
+      {
+        "name": "decoder_joint-model.int8.onnx",
+        "url": "https://huggingface.co/istupakov/parakeet-tdt-0.6b-v3-onnx/resolve/8f23f0c03c8761650bdb5b40aaf3e40d2c15f1ce/decoder_joint-model.int8.onnx",
+        "size": 18202004,
+        "sha256": "eea7483ee3d1a30375daedc8ed83e3960c91b098812127a0d99d1c8977667a70"
+      }
+    ]
+  },
+  {
+    "id": "whisper-tiny",
+    "name": "Whisper Tiny",
+    "role": "asr",
+    "runtime": "whisper.cpp",
+    "revision": "5359861c739e955e79d9a303bcbc70fb988958b1",
+    "license": "MIT",
+    "source": "https://huggingface.co/ggerganov/whisper.cpp",
+    "description": "Multilingual alternative. Larger models take more CPU time. Native whisper.cpp weights; no GPU required.",
+    "languages": [
+      "en",
+      "fr",
+      "ar",
+      "zh",
+      "cs",
+      "da",
+      "nl",
+      "fi",
+      "de",
+      "el",
+      "he",
+      "hi",
+      "hu",
+      "id",
+      "it",
+      "ja",
+      "ko",
+      "no",
+      "pl",
+      "pt",
+      "ro",
+      "ru",
+      "es",
+      "sv",
+      "tr",
+      "uk",
+      "vi"
+    ],
+    "forcedLanguage": true,
+    "sampleRate": 16000,
+    "estimatedMemoryMb": 1000,
+    "available": true,
+    "artifacts": [
+      {
+        "name": "ggml-tiny.bin",
+        "url": "https://huggingface.co/ggerganov/whisper.cpp/resolve/5359861c739e955e79d9a303bcbc70fb988958b1/ggml-tiny.bin",
+        "size": 77691713,
+        "sha256": "be07e048e1e599ad46341c8d2a135645097a538221678b7acdd1b1919c6e1b21"
+      }
+    ]
+  },
+  {
+    "id": "whisper-small",
+    "name": "Whisper Small",
+    "role": "asr",
+    "runtime": "whisper.cpp",
+    "revision": "5359861c739e955e79d9a303bcbc70fb988958b1",
+    "license": "MIT",
+    "source": "https://huggingface.co/ggerganov/whisper.cpp",
+    "description": "Multilingual alternative. Larger models take more CPU time. Native whisper.cpp weights; no GPU required.",
+    "languages": [
+      "en",
+      "fr",
+      "ar",
+      "zh",
+      "cs",
+      "da",
+      "nl",
+      "fi",
+      "de",
+      "el",
+      "he",
+      "hi",
+      "hu",
+      "id",
+      "it",
+      "ja",
+      "ko",
+      "no",
+      "pl",
+      "pt",
+      "ro",
+      "ru",
+      "es",
+      "sv",
+      "tr",
+      "uk",
+      "vi"
+    ],
+    "forcedLanguage": true,
+    "sampleRate": 16000,
+    "estimatedMemoryMb": 2500,
+    "available": true,
+    "artifacts": [
+      {
+        "name": "ggml-small.bin",
+        "url": "https://huggingface.co/ggerganov/whisper.cpp/resolve/5359861c739e955e79d9a303bcbc70fb988958b1/ggml-small.bin",
+        "size": 487601967,
+        "sha256": "1be3a9b2063867b937e64e2ec7483364a79917e157fa98c5d94b5c1fffea987b"
+      }
+    ]
+  },
+  {
+    "id": "whisper-medium",
+    "name": "Whisper Medium",
+    "role": "asr",
+    "runtime": "whisper.cpp",
+    "revision": "5359861c739e955e79d9a303bcbc70fb988958b1",
+    "license": "MIT",
+    "source": "https://huggingface.co/ggerganov/whisper.cpp",
+    "description": "Multilingual alternative. Larger models take more CPU time. Native whisper.cpp weights; no GPU required.",
+    "languages": [
+      "en",
+      "fr",
+      "ar",
+      "zh",
+      "cs",
+      "da",
+      "nl",
+      "fi",
+      "de",
+      "el",
+      "he",
+      "hi",
+      "hu",
+      "id",
+      "it",
+      "ja",
+      "ko",
+      "no",
+      "pl",
+      "pt",
+      "ro",
+      "ru",
+      "es",
+      "sv",
+      "tr",
+      "uk",
+      "vi"
+    ],
+    "forcedLanguage": true,
+    "sampleRate": 16000,
+    "estimatedMemoryMb": 5000,
+    "available": true,
+    "artifacts": [
+      {
+        "name": "ggml-medium.bin",
+        "url": "https://huggingface.co/ggerganov/whisper.cpp/resolve/5359861c739e955e79d9a303bcbc70fb988958b1/ggml-medium.bin",
+        "size": 1533763059,
+        "sha256": "6c14d5adee5f86394037b4e4e8b59f1673b6cee10e3cf0b11bbdbee79c156208"
+      }
+    ]
+  },
+  {
+    "id": "whisper-large-v3-turbo",
+    "name": "Whisper Large V3 Turbo",
+    "role": "asr",
+    "runtime": "whisper.cpp",
+    "revision": "5359861c739e955e79d9a303bcbc70fb988958b1",
+    "license": "MIT",
+    "source": "https://huggingface.co/ggerganov/whisper.cpp",
+    "description": "Multilingual alternative. Larger models take more CPU time. Native whisper.cpp weights; no GPU required.",
+    "languages": [
+      "en",
+      "fr",
+      "ar",
+      "zh",
+      "cs",
+      "da",
+      "nl",
+      "fi",
+      "de",
+      "el",
+      "he",
+      "hi",
+      "hu",
+      "id",
+      "it",
+      "ja",
+      "ko",
+      "no",
+      "pl",
+      "pt",
+      "ro",
+      "ru",
+      "es",
+      "sv",
+      "tr",
+      "uk",
+      "vi"
+    ],
+    "forcedLanguage": true,
+    "sampleRate": 16000,
+    "estimatedMemoryMb": 6000,
+    "available": true,
+    "artifacts": [
+      {
+        "name": "ggml-large-v3-turbo.bin",
+        "url": "https://huggingface.co/ggerganov/whisper.cpp/resolve/5359861c739e955e79d9a303bcbc70fb988958b1/ggml-large-v3-turbo.bin",
+        "size": 1624555275,
+        "sha256": "1fc70f774d38eb169993ac391eea357ef47c88757ef72ee5943879b7e8e2bc69"
+      }
+    ]
+  },
+  {
+    "id": "whisper-large-v3",
+    "name": "Whisper Large V3",
+    "role": "asr",
+    "runtime": "whisper.cpp",
+    "revision": "5359861c739e955e79d9a303bcbc70fb988958b1",
+    "license": "MIT",
+    "source": "https://huggingface.co/ggerganov/whisper.cpp",
+    "description": "Multilingual alternative. Larger models take more CPU time. Native whisper.cpp weights; no GPU required.",
+    "languages": [
+      "en",
+      "fr",
+      "ar",
+      "zh",
+      "cs",
+      "da",
+      "nl",
+      "fi",
+      "de",
+      "el",
+      "he",
+      "hi",
+      "hu",
+      "id",
+      "it",
+      "ja",
+      "ko",
+      "no",
+      "pl",
+      "pt",
+      "ro",
+      "ru",
+      "es",
+      "sv",
+      "tr",
+      "uk",
+      "vi"
+    ],
+    "forcedLanguage": true,
+    "sampleRate": 16000,
+    "estimatedMemoryMb": 10000,
+    "available": true,
+    "artifacts": [
+      {
+        "name": "ggml-large-v3.bin",
+        "url": "https://huggingface.co/ggerganov/whisper.cpp/resolve/5359861c739e955e79d9a303bcbc70fb988958b1/ggml-large-v3.bin",
+        "size": 3095033483,
+        "sha256": "64d182b440b98d5203c4f9bd541544d84c605196c4f7b845dfa11fb23594d1e2"
+      }
+    ]
+  },
+  {
+    "id": "lfm25-230m",
+    "name": "LFM2.5 230M · Q4_K_M",
+    "role": "llm",
+    "runtime": "llama.cpp",
+    "revision": "03502067c64ce32ac4fe87b0cec0310a1a13d3e9",
+    "license": "LFM Open License v1.0",
+    "source": "https://huggingface.co/LiquidAI/LFM2.5-230M-GGUF",
+    "description": "Local text summaries. RAM estimate includes runtime overhead; context is capped conservatively.",
+    "languages": [
+      "en",
+      "fr"
+    ],
+    "forcedLanguage": false,
+    "sampleRate": 16000,
+    "estimatedMemoryMb": 1500,
+    "available": true,
+    "artifacts": [
+      {
+        "name": "LFM2.5-230M-Q4_K_M.gguf",
+        "url": "https://huggingface.co/LiquidAI/LFM2.5-230M-GGUF/resolve/03502067c64ce32ac4fe87b0cec0310a1a13d3e9/LFM2.5-230M-Q4_K_M.gguf",
+        "size": 153406304,
+        "sha256": "7bbd90384d3deffe4c646ec9643b212802d32d4ce417c90a1ec9282100650062"
+      },
+      {
+        "name": "LICENSE",
+        "url": "https://huggingface.co/LiquidAI/LFM2.5-230M-GGUF/resolve/03502067c64ce32ac4fe87b0cec0310a1a13d3e9/LICENSE",
+        "size": 10574,
+        "sha256": "30adf9d6478191fb87f2424f63ba0728598335aaf99cd2848ef17e8e545fe94b"
+      }
+    ]
+  },
+  {
+    "id": "lfm25-350m",
+    "name": "LFM2.5 350M · Q4_K_M",
+    "role": "llm",
+    "runtime": "llama.cpp",
+    "revision": "657e078c94084481950a2d555a941481f715536b",
+    "license": "LFM Open License v1.0",
+    "source": "https://huggingface.co/LiquidAI/LFM2.5-350M-GGUF",
+    "description": "Local text summaries. RAM estimate includes runtime overhead; context is capped conservatively.",
+    "languages": [
+      "en",
+      "fr"
+    ],
+    "forcedLanguage": false,
+    "sampleRate": 16000,
+    "estimatedMemoryMb": 1500,
+    "available": true,
+    "artifacts": [
+      {
+        "name": "LFM2.5-350M-Q4_K_M.gguf",
+        "url": "https://huggingface.co/LiquidAI/LFM2.5-350M-GGUF/resolve/657e078c94084481950a2d555a941481f715536b/LFM2.5-350M-Q4_K_M.gguf",
+        "size": 229312224,
+        "sha256": "7e6f72643caafc9a68256686638c4d7916f2cec76d1df478d4c3ddcd95a6aed4"
+      },
+      {
+        "name": "LICENSE",
+        "url": "https://huggingface.co/LiquidAI/LFM2.5-350M-GGUF/resolve/657e078c94084481950a2d555a941481f715536b/LICENSE",
+        "size": 10596,
+        "sha256": "5188f2b355da20647257a3156db5834c794e5fb5e6d8dc4d4cdbb3180e75b85b"
+      }
+    ]
+  },
+  {
+    "id": "lfm25-1.2b-instruct",
+    "name": "LFM2.5 1.2B-Instruct · Q4_K_M",
+    "role": "llm",
+    "runtime": "llama.cpp",
+    "revision": "8ed288026e23958ad9dfa92d53ed773a8eee7125",
+    "license": "LFM Open License v1.0",
+    "source": "https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct-GGUF",
+    "description": "Local text summaries. RAM estimate includes runtime overhead; context is capped conservatively.",
+    "languages": [
+      "en",
+      "fr"
+    ],
+    "forcedLanguage": false,
+    "sampleRate": 16000,
+    "estimatedMemoryMb": 3000,
+    "available": true,
+    "artifacts": [
+      {
+        "name": "LFM2.5-1.2B-Instruct-Q4_K_M.gguf",
+        "url": "https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct-GGUF/resolve/8ed288026e23958ad9dfa92d53ed773a8eee7125/LFM2.5-1.2B-Instruct-Q4_K_M.gguf",
+        "size": 730895168,
+        "sha256": "b1b3de114215d9507409a662a501a631095a479a419584e8a2ded6304b19b4f5"
+      },
+      {
+        "name": "LICENSE",
+        "url": "https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct-GGUF/resolve/8ed288026e23958ad9dfa92d53ed773a8eee7125/LICENSE",
+        "size": 10596,
+        "sha256": "5188f2b355da20647257a3156db5834c794e5fb5e6d8dc4d4cdbb3180e75b85b"
+      }
+    ]
+  },
+  {
+    "id": "lfm25-1.2b-thinking",
+    "name": "LFM2.5 1.2B-Thinking · Q4_K_M",
+    "role": "llm",
+    "runtime": "llama.cpp",
+    "revision": "9584426effbfa44b677e925793a12188a36b44ce",
+    "license": "LFM Open License v1.0",
+    "source": "https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking-GGUF",
+    "description": "Local text summaries. RAM estimate includes runtime overhead; context is capped conservatively.",
+    "languages": [
+      "en",
+      "fr"
+    ],
+    "forcedLanguage": false,
+    "sampleRate": 16000,
+    "estimatedMemoryMb": 3500,
+    "available": true,
+    "artifacts": [
+      {
+        "name": "LFM2.5-1.2B-Thinking-Q4_K_M.gguf",
+        "url": "https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking-GGUF/resolve/9584426effbfa44b677e925793a12188a36b44ce/LFM2.5-1.2B-Thinking-Q4_K_M.gguf",
+        "size": 730895360,
+        "sha256": "7223a2202405b02e8e1e6c5baa543c43dc98c1d9741a5c2a0ee1583212e1231b"
+      },
+      {
+        "name": "LICENSE",
+        "url": "https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking-GGUF/resolve/9584426effbfa44b677e925793a12188a36b44ce/LICENSE",
+        "size": 10596,
+        "sha256": "5188f2b355da20647257a3156db5834c794e5fb5e6d8dc4d4cdbb3180e75b85b"
+      }
+    ]
+  },
+  {
+    "id": "lfm25-2.6b",
+    "name": "LFM2.5 2.6B · Q4_K_M",
+    "role": "llm",
+    "runtime": "llama.cpp",
+    "revision": "e7caca5d835a3901a8e0d63e94009429bafafdfc",
+    "license": "LFM Open License v1.0",
+    "source": "https://huggingface.co/LiquidAI/LFM2.5-2.6B-GGUF",
+    "description": "Local text summaries. RAM estimate includes runtime overhead; context is capped conservatively.",
+    "languages": [
+      "en",
+      "fr"
+    ],
+    "forcedLanguage": false,
+    "sampleRate": 16000,
+    "estimatedMemoryMb": 5000,
+    "available": true,
+    "artifacts": [
+      {
+        "name": "LFM2.5-2.6B-Q4_K_M.gguf",
+        "url": "https://huggingface.co/LiquidAI/LFM2.5-2.6B-GGUF/resolve/e7caca5d835a3901a8e0d63e94009429bafafdfc/LFM2.5-2.6B-Q4_K_M.gguf",
+        "size": 1674455040,
+        "sha256": "02a8b7e17487d326e46d68ce0ba24211e1b80a14c4cd0597fa73c1cd697f52ed"
+      },
+      {
+        "name": "LICENSE",
+        "url": "https://huggingface.co/LiquidAI/LFM2.5-2.6B-GGUF/resolve/e7caca5d835a3901a8e0d63e94009429bafafdfc/LICENSE",
+        "size": 10574,
+        "sha256": "30adf9d6478191fb87f2424f63ba0728598335aaf99cd2848ef17e8e545fe94b"
+      }
+    ]
+  },
+  {
+    "id": "lfm25-8b-a1b",
+    "name": "LFM2.5 8B-A1B · Q4_K_M",
+    "role": "llm",
+    "runtime": "llama.cpp",
+    "revision": "49c14831707011e64d70b2ebd8462ba08d608434",
+    "license": "LFM Open License v1.0",
+    "source": "https://huggingface.co/LiquidAI/LFM2.5-8B-A1B-GGUF",
+    "description": "Local text summaries. RAM estimate includes runtime overhead; context is capped conservatively.",
+    "languages": [
+      "en",
+      "fr"
+    ],
+    "forcedLanguage": false,
+    "sampleRate": 16000,
+    "estimatedMemoryMb": 10000,
+    "available": true,
+    "artifacts": [
+      {
+        "name": "LFM2.5-8B-A1B-Q4_K_M.gguf",
+        "url": "https://huggingface.co/LiquidAI/LFM2.5-8B-A1B-GGUF/resolve/49c14831707011e64d70b2ebd8462ba08d608434/LFM2.5-8B-A1B-Q4_K_M.gguf",
+        "size": 5155564768,
+        "sha256": "4923ec14f06b968b74d663e5949867d2d9c3bf13a20b8be1a9f9af39989b2bb0"
+      },
+      {
+        "name": "LICENSE",
+        "url": "https://huggingface.co/LiquidAI/LFM2.5-8B-A1B-GGUF/resolve/49c14831707011e64d70b2ebd8462ba08d608434/LICENSE",
+        "size": 10574,
+        "sha256": "4d28ca14dedc0b3d0fcc2b3339f0e79931faa33874f3d24f522183a8fc70068c"
+      }
+    ]
+  },
+  {
+    "id": "qwen3-asr-0.6b",
+    "name": "Qwen3-ASR 0.6B",
+    "runtime": "unavailable",
+    "role": "asr",
+    "available": false,
+    "blocker": "No audio-capable Windows CPU adapter has passed this release's smoke test. This model cannot be downloaded or selected here."
+  },
+  {
+    "id": "qwen3-asr-1.7b",
+    "name": "Qwen3-ASR 1.7B",
+    "runtime": "unavailable",
+    "role": "asr",
+    "available": false,
+    "blocker": "No audio-capable Windows CPU adapter has passed this release's smoke test. This model cannot be downloaded or selected here."
+  },
+  {
+    "id": "moonshine-v2-english",
+    "name": "Moonshine V2 English",
+    "runtime": "unavailable",
+    "role": "asr",
+    "available": false,
+    "blocker": "No audio-capable Windows CPU adapter has passed this release's smoke test. This model cannot be downloaded or selected here."
+  },
+  {
+    "id": "qwen25-7b-instruct",
+    "name": "Qwen2.5 7B-Instruct · Q4_K_M",
+    "role": "llm",
+    "runtime": "llama.cpp",
+    "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f",
+    "license": "Apache-2.0",
+    "source": "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct-GGUF",
+    "description": "Local dictation cleanup and summaries. Two GGUF shards, verified together. CPU only; allow additional processing time for faithful editing.",
+    "languages": [
+      "en",
+      "fr"
+    ],
+    "forcedLanguage": false,
+    "sampleRate": 16000,
+    "estimatedMemoryMb": 8500,
+    "available": true,
+    "artifacts": [
+      {
+        "name": "qwen2.5-7b-instruct-q4_k_m-00001-of-00002.gguf",
+        "url": "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct-GGUF/resolve/bb5d59e06d9551d752d08b292a50eb208b07ab1f/qwen2.5-7b-instruct-q4_k_m-00001-of-00002.gguf",
+        "size": 3993201344,
+        "sha256": "dfce12e3862a5283ccfb88221b48480e58745165de856439950d0f22590580db"
+      },
+      {
+        "name": "qwen2.5-7b-instruct-q4_k_m-00002-of-00002.gguf",
+        "url": "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct-GGUF/resolve/bb5d59e06d9551d752d08b292a50eb208b07ab1f/qwen2.5-7b-instruct-q4_k_m-00002-of-00002.gguf",
+        "size": 689872288,
+        "sha256": "539cf93f78e887edea1c04e2d7d8cdaca9d01dae9c9025bcb8accbe29df3d72a"
+      },
+      {
+        "name": "LICENSE",
+        "url": "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct-GGUF/resolve/bb5d59e06d9551d752d08b292a50eb208b07ab1f/LICENSE",
+        "size": 11343,
+        "sha256": "832dd9e00a68dd83b3c3fb9f5588dad7dcf337a0db50f7d9483f310cd292e92e"
+      }
+    ]
+  },
+  {
+    "id": "qwen35-0.8b",
+    "name": "Qwen3.5-0.8B · Q4_K_M",
+    "role": "llm",
+    "runtime": "llama.cpp",
+    "revision": "6ab461498e2023f6e3c1baea90a8f0fe38ab64d0",
+    "license": "Apache-2.0",
+    "source": "https://huggingface.co/unsloth/Qwen3.5-0.8B-GGUF",
+    "description": "Local text processing and summaries. Upstream Qwen/Google model; Unsloth GGUF conversion. Text input only; CPU inference. RAM estimate includes context and runtime overhead, not just weight size.",
+    "languages": [
+      "en",
+      "fr"
+    ],
+    "forcedLanguage": false,
+    "sampleRate": 16000,
+    "estimatedMemoryMb": 3000,
+    "available": true,
+    "artifacts": [
+      {
+        "name": "Qwen3.5-0.8B-Q4_K_M.gguf",
+        "url": "https://huggingface.co/unsloth/Qwen3.5-0.8B-GGUF/resolve/6ab461498e2023f6e3c1baea90a8f0fe38ab64d0/Qwen3.5-0.8B-Q4_K_M.gguf",
+        "size": 532517120,
+        "sha256": "bd258782e35f7f458f8aced1adc053e6e92e89bc735ba3be89d38a06121dc517"
+      },
+      {
+        "name": "LICENSE",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.txt",
+        "size": 11358,
+        "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+      }
+    ]
+  },
+  {
+    "id": "qwen35-2b",
+    "name": "Qwen3.5-2B · Q4_K_M",
+    "role": "llm",
+    "runtime": "llama.cpp",
+    "revision": "f6d5376be1edb4d416d56da11e5397a961aca8ae",
+    "license": "Apache-2.0",
+    "source": "https://huggingface.co/unsloth/Qwen3.5-2B-GGUF",
+    "description": "Local text processing and summaries. Upstream Qwen/Google model; Unsloth GGUF conversion. Text input only; CPU inference. RAM estimate includes context and runtime overhead, not just weight size.",
+    "languages": [
+      "en",
+      "fr"
+    ],
+    "forcedLanguage": false,
+    "sampleRate": 16000,
+    "estimatedMemoryMb": 4500,
+    "available": true,
+    "artifacts": [
+      {
+        "name": "Qwen3.5-2B-Q4_K_M.gguf",
+        "url": "https://huggingface.co/unsloth/Qwen3.5-2B-GGUF/resolve/f6d5376be1edb4d416d56da11e5397a961aca8ae/Qwen3.5-2B-Q4_K_M.gguf",
+        "size": 1280835840,
+        "sha256": "aaf42c8b7c3cab2bf3d69c355048d4a0ee9973d48f16c731c0520ee914699223"
+      },
+      {
+        "name": "LICENSE",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.txt",
+        "size": 11358,
+        "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+      }
+    ]
+  },
+  {
+    "id": "qwen35-4b",
+    "name": "Qwen3.5-4B · Q4_K_M",
+    "role": "llm",
+    "runtime": "llama.cpp",
+    "revision": "e87f176479d0855a907a41277aca2f8ee7a09523",
+    "license": "Apache-2.0",
+    "source": "https://huggingface.co/unsloth/Qwen3.5-4B-GGUF",
+    "description": "Local text processing and summaries. Upstream Qwen/Google model; Unsloth GGUF conversion. Text input only; CPU inference. RAM estimate includes context and runtime overhead, not just weight size.",
+    "languages": [
+      "en",
+      "fr"
+    ],
+    "forcedLanguage": false,
+    "sampleRate": 16000,
+    "estimatedMemoryMb": 7000,
+    "available": true,
+    "artifacts": [
+      {
+        "name": "Qwen3.5-4B-Q4_K_M.gguf",
+        "url": "https://huggingface.co/unsloth/Qwen3.5-4B-GGUF/resolve/e87f176479d0855a907a41277aca2f8ee7a09523/Qwen3.5-4B-Q4_K_M.gguf",
+        "size": 2740937888,
+        "sha256": "00fe7986ff5f6b463e62455821146049db6f9313603938a70800d1fb69ef11a4"
+      },
+      {
+        "name": "LICENSE",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.txt",
+        "size": 11358,
+        "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+      }
+    ]
+  },
+  {
+    "id": "gemma4-e2b",
+    "name": "Gemma 4 E2B · Q4_K_M",
+    "role": "llm",
+    "runtime": "llama.cpp",
+    "revision": "0314792d7f1f7e229411f620751375812bb9faf2",
+    "license": "Apache-2.0",
+    "source": "https://huggingface.co/unsloth/gemma-4-E2B-it-GGUF",
+    "description": "Local text processing and summaries. Upstream Qwen/Google model; Unsloth GGUF conversion. Text input only; CPU inference. RAM estimate includes context and runtime overhead, not just weight size.",
+    "languages": [
+      "en",
+      "fr"
+    ],
+    "forcedLanguage": false,
+    "sampleRate": 16000,
+    "estimatedMemoryMb": 8000,
+    "available": true,
+    "artifacts": [
+      {
+        "name": "gemma-4-E2B-it-Q4_K_M.gguf",
+        "url": "https://huggingface.co/unsloth/gemma-4-E2B-it-GGUF/resolve/0314792d7f1f7e229411f620751375812bb9faf2/gemma-4-E2B-it-Q4_K_M.gguf",
+        "size": 3106738272,
+        "sha256": "740185b21d22ceb83a11c3aa62ad5842ef32c70f6096d756bbee85a1e4ec34b8"
+      },
+      {
+        "name": "LICENSE",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.txt",
+        "size": 11358,
+        "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+      }
+    ]
+  },
+  {
+    "id": "gemma4-e4b",
+    "name": "Gemma 4 E4B · Q4_K_M",
+    "role": "llm",
+    "runtime": "llama.cpp",
+    "revision": "bfc15c382204943c3a8fff0c750b94ae2364d7a3",
+    "license": "Apache-2.0",
+    "source": "https://huggingface.co/unsloth/gemma-4-E4B-it-GGUF",
+    "description": "Local text processing and summaries. Upstream Qwen/Google model; Unsloth GGUF conversion. Text input only; CPU inference. RAM estimate includes context and runtime overhead, not just weight size.",
+    "languages": [
+      "en",
+      "fr"
+    ],
+    "forcedLanguage": false,
+    "sampleRate": 16000,
+    "estimatedMemoryMb": 12000,
+    "available": true,
+    "artifacts": [
+      {
+        "name": "gemma-4-E4B-it-Q4_K_M.gguf",
+        "url": "https://huggingface.co/unsloth/gemma-4-E4B-it-GGUF/resolve/bfc15c382204943c3a8fff0c750b94ae2364d7a3/gemma-4-E4B-it-Q4_K_M.gguf",
+        "size": 4977171584,
+        "sha256": "85a896a047553e842f25297ee5b031d64ff30147d9c4af17b1e4b394cd1fab87"
+      },
+      {
+        "name": "LICENSE",
+        "url": "https://www.apache.org/licenses/LICENSE-2.0.txt",
+        "size": 11358,
+        "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+      }
+    ]
+  }
+]

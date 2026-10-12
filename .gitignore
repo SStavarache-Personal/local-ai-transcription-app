@@ -1,0 +1,24 @@
+.venv/
+.tools/
+**/bin/
+**/obj/
+dist/
+test-output/
+*.user
+*.partial
+__pycache__/
+# Local reports and captures can contain user paths and recorded content.
+docs/*.json
+docs/screenshots/
+.localtranscriber/
+**/.localtranscriber/
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.pfx
+*.p12
